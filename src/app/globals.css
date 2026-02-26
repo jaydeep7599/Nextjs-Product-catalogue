@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* SNIKIE BACKGROUND */
+
+body {
+  background-color: #fafafa;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* REMOVE DEFAULT LINK STYLES */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* IMAGE BEHAVIOUR */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* BUTTON RESET */
+
+button {
+  cursor: pointer;
+}
+
+
+@layer components {
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .page-title {
+    font-size: 20px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  .product-category {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 1.25rem;
+  }
+
+  .product-price {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .product-desc {
+    font-size: 14px;
+    line-height: 28px;
+    color: #6b7280;
+    margin-bottom: 3rem;
+  }
+
+  .image-canvas {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+}
