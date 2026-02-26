@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* RESET */
 
 * {
   box-sizing: border-box;
@@ -12,9 +11,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
-
-/* SNIKIE BACKGROUND */
 
 body {
   background-color: #fafafa;
@@ -27,21 +25,17 @@ body {
   color: #fff;
 }
 
-/* REMOVE DEFAULT LINK STYLES */
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* IMAGE BEHAVIOUR */
 
 img {
   display: block;
   max-width: 100%;
 }
-
-/* BUTTON RESET */
 
 button {
   cursor: pointer;

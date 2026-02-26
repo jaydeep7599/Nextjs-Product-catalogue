@@ -33,13 +33,13 @@ export default function AddToCartButton({
         min={1}
         value={qty}
         onChange={(e) => setQty(Number(e.target.value))}
-        className="w-[70px] h-[44px] border border-gray-300 rounded-full px-3 text-sm focus:outline-none text-center"
+        className="w-[80px] h-[44px] border border-gray-300 rounded-full px-3 text-sm focus:outline-none text-center"
       />
 
       <button
         onClick={handleAdd}
         disabled={loading}
-        className="h-[44px] px-8 bg-[black] text-[white] text-sm rounded-full tracking-wide disabled:opacity-50 mx-[6px]"
+        className="h-[44px] px-[15px] bg-[black] text-[white] text-sm rounded-full tracking-wide disabled:opacity-50 mx-[6px] border-0"
       >
         {loading ? "Adding..." : "Add to Cart →"}
       </button>

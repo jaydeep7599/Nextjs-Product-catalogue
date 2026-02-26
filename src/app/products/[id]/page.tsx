@@ -28,7 +28,7 @@ export default async function ProductDetailsPage({
       <main className="py-16 max-w-[1100px] mx-auto mt-[50]">
         <div className="flex lg:flex-row md:flex-row gap-[20]">
           
-          <div className="lg:w-[60%] grow">
+          <div className="lg:w-[60%] grow shrink-[0]">
             <div className="image-canvas h-[460px]">
               <img
                 src={product.image}
@@ -47,7 +47,7 @@ export default async function ProductDetailsPage({
               {product.title}
             </h1>
             <p className="product-price">
-              ₹ {product.price}
+              $ {product.price}
             </p>
             <p className="product-desc">
               {product.description}

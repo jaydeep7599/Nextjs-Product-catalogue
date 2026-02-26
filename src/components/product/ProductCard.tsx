@@ -7,12 +7,13 @@ interface Props {
 
 export default function ProductCard({ product }: Props) {
   return (
+
     <Link
       href={`/products/${product.id}`}
-      className="group block w-[48%] md:w-[31%] lg:w-[23%]"
+      className="group block w-[100%] md:w-[100%] lg:w-[100%]"
     >
 
-      <div className="bg-[#f5f5f5] h-[260px] flex items-center justify-center overflow-hidden">
+      <div className="bg-[#f5f5f5] h-[260px] flex items-center justify-center overflow-hidden rounded-[10px]">
         <img
           src={product.image}
           alt={product.title}
@@ -25,12 +26,12 @@ export default function ProductCard({ product }: Props) {
           {product.category}
         </p>
 
-        <h2 className="text-sm font-normal leading-5 line-clamp-2 min-h-[44px]">
+        <h2 className="text-base leading-5 line-clamp-2 min-h-[44px]">
           {product.title}
         </h2>
 
-        <p className="text-[13px] uppercase tracking-[0.12em] font-medium mt-3">
-          ₹ {product.price}
+        <p className="text-[13px] uppercase tracking-[0.12em] font-[800] mt-3">
+          $ {product.price}
         </p>
       </div>
 

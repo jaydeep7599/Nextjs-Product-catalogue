@@ -26,12 +26,12 @@ export default function ProductsList({
             placeholder="Search products"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full border-0 border-b border-gray-300 bg-transparent py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:border-black"
+            className="w-full border-0 p-[10px] border-b border-[#afafaf] bg-transparent py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:border-black text-[18px]"
           />
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-y-16">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-[20px] mt-[50px]">
         {filteredProducts.map((product) => (
           <ProductCard
             key={product.id}
